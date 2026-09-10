@@ -1,13 +1,19 @@
 function verificar() {
-    const temperatura = parseFloat(document.getElementById("temperatura").value);
-    const alerta = document.getElementById("alerta");
+    const campoTemperatura = document.getElementById("temperatura").value;
+    const elementoAlerta = document.getElementById("alerta");
+
     
-    if (temperatura < 20) {
-        document.getElementById("mensagem").textContent = "Está frio";
-    } else if (temperatura >= 20 && temperatura <= 30) {
-        document.getElementById("mensagem").textContent = "Está agradável";
-    } else {
-        alert("Está quente!");
+    if (campoTemperatura === "") {
+        elementoAlerta.textContent = "Por favor, insira uma temperatura.";
+        return;
     }
 
+    const temperatura = parseFloat(campoTemperatura);
+
+   
+    if (temperatura > 30) {
+        elementoAlerta.textContent = "ALERTA: Temperatura acima do limite permitido! (Acima de 30 °C)";
+    } else {
+        elementoAlerta.textContent = "Temperatura normal.";
+    }
 }
