@@ -11,6 +11,5 @@ function calcSalario(){
     const desconto = inputSalario * 0.08;
     const salarioLiquido = inputSalario - desconto;
     
-    elementoResultado.innerHTML = `Salario Bruto: R$ ${inputSalario.toFixed(2)}.<br>Imposto a ser pago: R$ ${desconto.toFixed(2)}.<br>Salario Liquido: R$ ${salarioLiquido.toFixed(2)}.`;
-
+elementoResultado.innerHTML = `Salario Bruto: R$ ${inputSalario.toFixed(2)}.<br><span style="color: red;">Imposto a ser pago: R$ ${desconto.toFixed(2)}.</span><br>Salario Liquido: R$ ${salarioLiquido.toFixed(2)}.`;
 }
