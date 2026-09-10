@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desempenho Academico</title>
+    <title>Questão 1 - Desempenho Acadêmico</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
-
 <body>
-    <h1>Desempenho Academico</h1>
-    <form>
+    <div class="card">
+    <h1>Acompanhamento Acadêmico</h1>
+    
+    <label for="nota1">Nota 1:</label>
+    <input id="nota1" type="number" step="0.1">
 
-        <label for="av1">AV1:</label>
-        <input id="av1" type="number">
-        
-        <label for="av2">AV2:</label>
-        <input id="av2" type="number">
+    <label for="nota2">Nota 2:</label>
+    <input id="nota2" type="number" step="0.1">
 
+    <button id="btnCalcular" type="button" onclick="calcularMedia()">Calcular</button>
 
-        <button id="btnCalcular" type="button" onclick="calcular()">Calcular Nota </button>
-    </form>
-
-    <h2>Seu resultado Academico</h2>
     <p id="resultado"></p>
-    <p id="aprovacao"></p>
 
     <script src="script.js"></script>
-</body>
+</div>
 </html>

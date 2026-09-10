@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Garante que qualquer container vire um card centralizado e organizado */
+.card, body > div, main {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+h1 {
+    font-size: 1.4rem;
+    color: #1a73e8;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a73e8;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+button:hover {
+    background-color: #1557b0;
+}
+
+#resultado, #mensagem, #alerta, #situacao {
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #e8f0fe;
+    color: #1967d2;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+#resultado:empty, #mensagem:empty, #alerta:empty, #situacao:empty {
+    display: none;
+}

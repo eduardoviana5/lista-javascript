@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classificação do Estudante</title>
+    <title>Questão 25 - Desempenho Escolar</title>
+    <!-- Vinculação do CSS universal -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Classificação de Desempenho</h1>
+    <div class="card">
+        <h1>Classificação do Estudante</h1>
 
-    <label for="media">Média do Aluno:</label>
-    <input id="media" type="number" step="0.1" min="0" max="10" placeholder="Digite a média">
+        <label for="media">Média do Aluno:</label>
+        <input id="media" type="number" step="0.1" min="0" max="10" placeholder="Digite a média (ex: 7.5)">
 
-    <button id="verificar" type="button" onclick="verifica()">Verificar</button>
+        <button id="verificar" type="button" onclick="verifica()">Verificar</button>
 
-    <p id="resultado"></p>
+        <p id="resultado"></p>
+    </div>
 
+    <!-- Vinculação do arquivo JS -->
     <script src="script.js"></script>
 </body>
 </html>
