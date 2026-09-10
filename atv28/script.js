@@ -5,13 +5,16 @@ function cadastrar() {
 
     if (nome === "" || email === "") {
         elementoResultado.textContent = "Por favor, preencha todos os campos (Nome e E-mail) para prosseguir.";
+        elementoResultado.style.color = "red";
         return;
     }
 
     if (!email.includes("@") || !email.includes(".")) {
+        elementoResultado.style.color = "red";
         elementoResultado.textContent = "Por favor, insira um e-mail válido.";
         return;
     }
 
     elementoResultado.textContent = `Cadastro realizado com sucesso! Bem-vindo(a), ${nome}.`;
+    elementoResultado.style.color = "blue";
 }

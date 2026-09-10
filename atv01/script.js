@@ -7,7 +7,10 @@ function calcularMedia() {
 
     if (media >= 7) {
         resultado.textContent = `Média: ${media.toFixed(1)} - Estudante Aprovado!`;
+        resultado.style.color ="green"
     } else {
         resultado.textContent = `Média: ${media.toFixed(1)} - Estudante Não Aprovado.`;
+        resultado.style.color ="red"
+
     }
 }

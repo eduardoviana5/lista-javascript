@@ -13,7 +13,11 @@ function verificar() {
    
     if (temperatura > 30) {
         elementoAlerta.textContent = "ALERTA: Temperatura acima do limite permitido! (Acima de 30 °C)";
+        elementoAlerta.style.color = "red";
+        return;
     } else {
         elementoAlerta.textContent = "Temperatura normal.";
+        elementoAlerta.style.color = "blue"
+        return;
     }
 }

@@ -16,9 +16,12 @@ function analisarCredito() {
 
     if (renda < 2000) {
         elementoResultado.textContent = `Renda R$ ${renda.toFixed(2)}: Análise não aprovada.`;
+        elementoResultado.style.color = "red";
     } else if (renda < 5000) {
         elementoResultado.textContent = `Renda R$ ${renda.toFixed(2)}: Necessária análise complementar.`;
+        elementoResultado.style.color = "blue";
     } else {
         elementoResultado.textContent = `Renda R$ ${renda.toFixed(2)}: Análise inicial aprovada.`;
+        elementoResultado.style.color = "blue";
     }
 }

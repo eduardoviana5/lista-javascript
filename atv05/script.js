@@ -9,7 +9,10 @@ function verificarSituacao() {
 
     if (media >= 6.0) {
         elementoSituacao.textContent = `Aprovado(a) com média ${media.toFixed(1)}.`;
+        elementoSituacao.style.color = "green";
     } else {
         elementoSituacao.textContent = `Reprovado(a) com média ${media.toFixed(1)}.`;
+        elementoSituacao.style.color = "red";
+
     }
 }

@@ -5,8 +5,10 @@ function validaSenha(){
 
     if (elementoSenha.length < 8) {
         elementoResultado.textContent = "A senha deve ter pelo menos 8 caracteres.";
+        elementoResultado.style.color = "red";
     } else {
         elementoResultado.textContent = "Senha válida!";
+        elementoResultado.style.color = "green";
     }
 
     

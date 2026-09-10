@@ -10,7 +10,9 @@ function verificacao() {
 
     if (inputFrequencia >= 75) {
         elementoResultado.textContent = `Aluno APROVADO! Frequência: ${inputFrequencia}%.`;
+        elementoResultado.style.color = "blue";
     } else {
         elementoResultado.textContent = `Aluno REPROVADO por falta! Frequência: ${inputFrequencia}%.`;
+        elementoResultado.style.color = "red";
     }
 }

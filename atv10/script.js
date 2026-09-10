@@ -12,8 +12,10 @@ function conversao(){
 
     if (fahrenheit > 86) {
         elementoResultado.textContent = `${fahrenheit.toFixed(1)} °F - Temperatura Alta (Acima de 86 °F)`;
+        elementoResultado.style.color = "red"
     } else {
         elementoResultado.textContent = `${fahrenheit.toFixed(1)} °F - Temperatura Normal (86 °F ou menor)`;
+        elementoResultado.style.color = "blue"
     }
 
 }

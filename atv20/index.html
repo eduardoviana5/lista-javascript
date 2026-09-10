@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplicação Educacional de Transito</title>
+    <title>Aplicação Educacional de Trânsito</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <div class="card">
-    <h1>Semáforo</h1>
-    
-    <button id="vermelho" type="button" onclick="orientacao('vermelho')">Vermelho</button>
-    <button id="amarelo" type="button" onclick="orientacao('amarelo')">Amarelo</button>
-    <button id="verde" type="button" onclick="orientacao('verde')">Verde</button>
+        <h1>Semáforo Educacional</h1>
+        
+        <button id="vermelho" type="button" style="background-color: #dc3545;" onclick="orientacao('vermelho')">Vermelho</button>
+        <button id="amarelo" type="button" style="background-color: #ffc107; color: #212529;" onclick="orientacao('amarelo')">Amarelo</button>
+        <button id="verde" type="button" style="background-color: #28a745;" onclick="orientacao('verde')">Verde</button>
 
-    <p id="orientacao"></p>
-    
+        <p id="orientacao"></p>
+    </div>
+
     <script src="script.js"></script>
-</div>
+</body>
 </html>

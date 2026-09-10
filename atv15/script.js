@@ -10,8 +10,10 @@ function verificacao(){
 
     if(inputVelocidade <= 60){
         elementoResultado.innerHTML = "Velocidade permitida!"
+        elementoResultado.style.color = "blue";
     }else {
         elementoResultado.innerHTML = "Velocidade acima do limite!"
+        elementoResultado.style.color = "red";
     }
    
     

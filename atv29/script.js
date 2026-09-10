@@ -4,6 +4,7 @@ function classificarProduto() {
 
     if (inputQuantidade === "") {
         elementoResultado.textContent = "Por favor, insira a quantidade do produto.";
+        elementoResultado.style.color = "red";
         return;
     }
 
@@ -11,14 +12,18 @@ function classificarProduto() {
 
     if (quantidade < 0 || isNaN(quantidade)) {
         elementoResultado.textContent = "Por favor, informe uma quantidade válida (maior ou igual a 0).";
+        elementoResultado.style.color = "red";
         return;
     }
 
     if (quantidade === 0) {
         elementoResultado.textContent = "Situação: Produto indisponível";
+        elementoResultado.style.color = "red";
     } else if (quantidade <= 5) {
         elementoResultado.textContent = "Situação: Estoque baixo";
+        elementoResultado.style.color = "gold";
     } else {
         elementoResultado.textContent = "Situação: Estoque disponível";
+        elementoResultado.style.color = "blue";
     }
 }

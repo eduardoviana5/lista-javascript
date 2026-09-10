@@ -10,9 +10,11 @@ function verificacao(){
 
     if(elementoEstoque < 10){
         elementoResultado.textContent = "ALERTA: Estoque esta quase ACABANDO!";
+        elementoResultado.style.color = "red";
         return;
     }else{
         elementoResultado.textContent = "Estoque Quantidade OK"
+        elementoResultado.style.color = "blue"
     }
 
 

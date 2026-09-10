@@ -15,6 +15,7 @@ function verifica() {
 
     if (inputHorario.length < 5) {
         elementoResultado.textContent = "Por favor, digite o horário no formato HH:MM (ex: 08:57).";
+        elementoResultado.style.color = "red"
         return;
     }
 
@@ -24,6 +25,7 @@ function verifica() {
 
     if (horas > 23 || minutos > 59) {
         elementoResultado.textContent = "Horário inválido! Informe um valor entre 00:00 e 23:59.";
+        elementoResultado.style.color = "red"
         return;
     }
 
@@ -31,7 +33,10 @@ function verifica() {
 
     if (estaAberta) {
         elementoResultado.textContent = `Horário (${inputHorario}): Biblioteca Aberta!`;
+        elementoResultado.style.color = "blue"
     } else {
         elementoResultado.textContent = `Horário (${inputHorario}): Biblioteca Fechada!`;
+        elementoResultado.style.color = "red"
+
     }
 }

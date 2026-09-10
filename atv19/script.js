@@ -7,6 +7,7 @@ function calcIdade() {
 
     if (!anoNascimento || anoNascimento > anoAtual) {
         elementoResultado.innerHTML = "Por favor, insira um ano de nascimento válido.";
+        elementoResultado.style.color = "red";
         return;
     }
 

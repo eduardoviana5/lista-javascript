@@ -4,10 +4,10 @@ function escolha(periodo) {
     const elementoResultado = document.getElementById('resultado');
 
     if (elementoPeriodo === 'manha') {
-        elementoResultado.textContent = 'Bons estudos nesta manhã!';
+        elementoResultado.textContent = 'Bom dia!';
     } else if (elementoPeriodo === 'tarde') {
-        elementoResultado.textContent = 'Tenha uma ótima tarde de estudos!';
+        elementoResultado.textContent = 'Boa Tarde!';
     } else if (elementoPeriodo === 'noite') {
-        elementoResultado.textContent = 'Boa noite! Foco nos estudos!';
+        elementoResultado.textContent = 'Boa noite!';
     }
 }
