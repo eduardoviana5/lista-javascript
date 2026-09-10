@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Compra</title>
+</head>
+<body>
+    <h1>Loja Virtual</h1>
+
+    <label for="preco">Preço do Produto (R$):</label>
+    <input id="preco" type="number" step="0.01" min="0">
+
+    <label for="quantidade">Quantidade:</label>
+    <input id="quantidade" type="number" min="1">
+
+    <button id="calcular" type="button" onclick="calcular()">Calcular total</button>
+
+    <p id="resultado"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
